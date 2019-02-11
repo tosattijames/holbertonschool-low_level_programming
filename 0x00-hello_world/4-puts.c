@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-*
+*puts output
 *
 */
 int main(void)
