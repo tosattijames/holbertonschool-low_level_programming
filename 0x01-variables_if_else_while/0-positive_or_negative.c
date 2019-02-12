@@ -19,9 +19,9 @@ srand(time(0));
 	/**
 	* checks if the integer is less than 0.
 	*/
-	if (n < 0)
+	if (n == 0)
 	{
-	printf("%d is negative\n", n);
+	printf("%d is zero\n ", n);
 	}
 	/**
 	* checks if the integer is greater than 0.
@@ -35,7 +35,7 @@ srand(time(0));
 	*/
 	else
 	{
-	printf("%d is zero\n ", n);
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
