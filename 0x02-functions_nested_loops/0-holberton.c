@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "holberton.h"
 
 /**
@@ -14,13 +13,16 @@
 int main(void)
 {
 
-int n;
-char string[9] = "Holberton";
-
-for (n = '0'; n <= '9'; n++)
-{
-_putchar(string[n]);
-}
+_putchar('H');
+_putchar('o');
+_putchar('l');
+_putchar('b');
+_putchar('e');
+_putchar('r');
+_putchar('t');
+_putchar('o');
+_putchar('n');
 _putchar('\n');
+
 return (0);
 }
