@@ -2,7 +2,7 @@
 /**
 *  reset_to_98 - Reset the interger using pointers.
 *  @n: pointer passed to function
-*  Return: void  
+*  Return: void
 */
 void reset_to_98(int *n)
 {
