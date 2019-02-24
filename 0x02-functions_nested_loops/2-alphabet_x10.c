@@ -3,21 +3,19 @@
  * print_alphabet_x10 - Entry point
  *
  * printing alphabet 10 times
+ * Return: return 0
  */
 void print_alphabet_x10(void)
 {
-char i = 0, l;
-
-while (i <= 9)
+char ch;
+int x = 0;
+while (x <= 9)
 {
-l = 'a';
-while (l <= 'z')
+for (ch = 'a' ; ch <= 'z' ; ch++)
 {
-_putchar(l);
-l++;
+putchar(ch);
 }
-_putchar('\n');
-i++;
+x++;
+putchar('\n');
 }
-
 }
