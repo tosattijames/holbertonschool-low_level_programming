@@ -1,8 +1,14 @@
 #include "holberton.h"
 
+/**
+ * print_sign - Checks for lowercase characters
+ * @n: input number
+ *
+ * Return: 1 = positive, 0 = zero, -1 = negative
+ */
 int print_sign(int n)
 {
-if(n > 0)
+if (n > 0)
 {
 _putchar('+');
 return (1);
