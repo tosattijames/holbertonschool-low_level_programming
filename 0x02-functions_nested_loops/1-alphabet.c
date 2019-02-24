@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - Print lowercase alphabet
+ * void print_alphabet - Print lowercase alphabet
  *
  * Return: print to stdout the lowecase alphabet followed by a new line
  */
