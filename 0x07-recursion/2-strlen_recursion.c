@@ -6,11 +6,11 @@
  */
 int _strlen_recursion(char *s)
 {
-if (*s == '\0')
+int x = 0;
+
+while (s[x] != '\0')
 {
-_putchar('\n');
-return;
+x++;
 }
-_putchar(*s);
-s++;
+return (x);
 }
