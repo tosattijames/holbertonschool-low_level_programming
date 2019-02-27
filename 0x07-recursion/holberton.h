@@ -30,4 +30,18 @@ void puts_half(char *str);
 void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 
+/*0x05*/
+
+/*0x06*/
+
+/*0x07*/
+void _puts_recursion(char *s);
+void _print_rev_recursion(char *s);
+int _strlen_recursion(char *s);
+int factorial(int n);
+int _pow_recursion(int x, int y);
+int _sqrt_recursion(int n);
+int is_prime_number(int n);
+int is_palindrome(char *s);
+
 #endif /* HOLBERTON_H */
