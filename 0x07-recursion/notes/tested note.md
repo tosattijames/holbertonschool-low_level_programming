@@ -16,13 +16,14 @@ greater than one, first calls itself to build a lower wall, and then adds one
 a foot of bricks.</span>
      <p></p><p> 
 A simple example of recursion would be:
+<span background-color='yellow'>
 </p><p>void recurse()<br>{<br>    recurse(); /* Function calls itself */<br>}<br><br>int main()<br>{<br>    recurse(); /* Sets off the recursion */<br>    return 0;<br>}<br></p> 
 This program will not continue forever, however. The computer keeps function
 calls on a stack and once too many are called without ending, the program will
 crash. Why not write a program to see how many times the function is called
 before the program terminates?
 <p>#include &lt;stdio.h&gt;<br><br>void recurse ( int count ) /* Each call gets its own copy of count */<br>{<br>    printf( "%d\n", count );<br>    /* It is not necessary to increment count since each function's<br>       variables are separate (so each count will be initialized one greater)<br>     */<br>    recurse ( count + 1 );<br>}<br><br>int main()<br>{<br>  recurse ( 1 ); /* First function call, so it starts at one */<br>  return 0;<br>}<br></p> 
-<span class="jr-highlight-yellow" id="jr-1551451533437">This simple program will show the number of times the recurse function has
+
 been called by initializing each individual function call's count variable one
 greater than it was previous by passing in count + 1. Keep in mind that it is
 not a function call restarting itself; it is hundreds of function calls that
