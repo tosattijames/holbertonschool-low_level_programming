@@ -51,7 +51,7 @@ is true, it will not allow the function to call itself again. (Or, it
 could check if a certain condition is true and only then allow the
 function to call itself). 
 </span></p><p> 
-A quick example:</p><p><span class="jr-highlight-green" id="jr-1551451578502">void count_to_ten ( int count )</span><br><span class="jr-highlight-green" id="jr-1551451578502">{</span><br><span class="jr-highlight-green" id="jr-1551451578502">    /* we only keep counting if we have a value less than ten</span><br><span class="jr-highlight-green" id="jr-1551451578502">       if ( count &lt; 10 )   </span><br><span class="jr-highlight-green" id="jr-1551451578502">       {</span><br><span class="jr-highlight-green" id="jr-1551451578502">           count_to_ten( count + 1 );</span><br><span class="jr-highlight-green" id="jr-1551451578502">       }</span><br><span class="jr-highlight-green" id="jr-1551451578502">}</span><br><span class="jr-highlight-green" id="jr-1551451578502">int main()</span><br><span class="jr-highlight-green" id="jr-1551451578502">{</span><br><span class="jr-highlight-green" id="jr-1551451578502">  count_to_ten ( 0 ); </span><br><span class="jr-highlight-green" id="jr-1551451578502">}</span><br></p> 
+A quick example:<h2></p><p><span class="jr-highlight-green" id="jr-1551451578502">void count_to_ten ( int count )</span><br><span class="jr-highlight-green" id="jr-1551451578502">{</span><br><span class="jr-highlight-green" id="jr-1551451578502">    /* we only keep counting if we have a value less than ten</span><br><span class="jr-highlight-green" id="jr-1551451578502">       if ( count &lt; 10 )   </span><br><span class="jr-highlight-green" id="jr-1551451578502">       {</span><br><span class="jr-highlight-green" id="jr-1551451578502">           count_to_ten( count + 1 );</span><br><span class="jr-highlight-green" id="jr-1551451578502">       }</span><br><span class="jr-highlight-green" id="jr-1551451578502">}</span><br><span class="jr-highlight-green" id="jr-1551451578502">int main()</span><br><span class="jr-highlight-green" id="jr-1551451578502">{</span><br><span class="jr-highlight-green" id="jr-1551451578502">  count_to_ten ( 0 ); </span><br><span class="jr-highlight-green" id="jr-1551451578502">}</span><br></p></h2> 
 This program ends when we've counted to ten, or more precisely, when count is
 no longer less than ten. This is a good base case because it means that if we
 have an input greater than ten, we'll stop immediately.  If we'd chosen to
@@ -67,8 +67,8 @@ ready to go to the next line after the call. It can still perform operations.
 <span class="jr-highlight-yellow" id="jr-1551451816049">One function you could write could print out the numbers 123456789987654321</span>.
 How can you use recursion to write a function to do this? S<span class="jr-highlight-yellow" id="jr-1551451822359">imply have it keep
 incrementing a variable passed in, and then output the variable twice: once
-before the function recurses, and once after.</span>
-</p><p>void printnum ( int begin )<br>{<br>    printf( "%d", begin );<br>    if ( begin &lt; 9 )         /* The base case is when begin is no longer */<br>    {                           /* less than 9 */<br>        printnum ( begin + 1 ); <br>    }<br>    /* display begin again after we've already printed everything from 1 to 9<br>     * and from 9 to begin + 1 */<br>    printf( "%d", begin );<br>}<br></p> 
+before the function recurses, and once after.<h2></span>
+</p><p>void printnum ( int begin )<br>{<br>    printf( "%d", begin );<br>    if ( begin &lt; 9 )         /* The base case is when begin is no longer */<br>    {                           /* less than 9 */<br>        printnum ( begin + 1 ); <br>    }<br>    /* display begin again after we've already printed everything from 1 to 9<br>     * and from 9 to begin + 1 */<br>    printf( "%d", begin );<br>}<br></p> </h2>
 This function works because it will go through and print the numbers begin to
 9, and then as each printnum function terminates it will continue printing the
 value of begin in each function from 9 to begin.  
@@ -80,9 +80,8 @@ of any number greater than 0. (Factorial is number * (number - 1) * (number - 2)
 Hint: Your function should recursively find the factorial of the smaller numbers first, i.e., it
 takes a number, finds the factorial of the previous number, and multiplies the
 number times that factorial...have fun. :-)
-</p><p><a href="http://www.liveperson.com/lp/cprogramming/?kbid=7744&amp;sub=tg-replacement">Still not getting it? Ask an expert!</a>
 
 
-<br><a href="https://plus.google.com/113987539774523532573?rel=author">By Alex Allain</a>
-a href="//https://www.cprogramming.com/tutorial/c/lesson16.html"> Source</a>
+<a href="https://plus.google.com/113987539774523532573?rel=author">By Alex Allain</a>
+<a href="//https://www.cprogramming.com/tutorial/c/lesson16.html"> Source</a>
 
