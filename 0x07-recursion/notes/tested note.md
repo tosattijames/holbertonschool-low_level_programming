@@ -16,7 +16,7 @@ greater than one, first calls itself to build a lower wall, and then adds one
 a foot of bricks.</span>
      <p></p><p> 
 A simple example of recursion would be:
-<span background-color='yellow'>
+<h2>
 </p><p>void recurse()<br>{<br>    recurse(); /* Function calls itself */<br>}<br><br>int main()<br>{<br>    recurse(); /* Sets off the recursion */<br>    return 0;<br>}<br></p> 
 This program will not continue forever, however. The computer keeps function
 calls on a stack and once too many are called without ending, the program will
@@ -80,7 +80,7 @@ takes a number, finds the factorial of the previous number, and multiplies the
 number times that factorial...have fun. :-)
 </p><p><a href="http://www.liveperson.com/lp/cprogramming/?kbid=7744&amp;sub=tg-replacement">Still not getting it? Ask an expert!</a>
 
-<br><a href="lesson15.html">Previous: Linked Lists</a>
-<br><a href="lesson17.html">Next: Functions with variable arguments</a>
-<br><a href="//www.cprogramming.com/tutorial/c-tutorial.html">Back to C Tutorial Index</a>
+
+<br><a href="https://plus.google.com/113987539774523532573?rel=author">By Alex Allain</a>
+a href="//https://www.cprogramming.com/tutorial/c/lesson16.html"> Source</a>
 
