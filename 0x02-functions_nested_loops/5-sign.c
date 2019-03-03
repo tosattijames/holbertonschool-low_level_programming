@@ -2,7 +2,7 @@
 
 /**
  * print_sign - Checks for lowercase characters
- * @n: input number
+ * @n: input 
  *
  * Return: 1 = positive, 0 = zero, -1 = negative
  */
