@@ -24,5 +24,6 @@ putchar(space1);
 putchar(comma1);
 }
 }
+putchar('\n');
 return (0);
 }
