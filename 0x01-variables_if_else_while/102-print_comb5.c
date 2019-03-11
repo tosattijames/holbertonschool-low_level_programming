@@ -23,7 +23,7 @@ for (num2 = '0' ; num2 <= '9' ; num2++)
 for (num3 = '0' ; num3 <= '9' ; num3++)
 {
 /** Digit Four Loop */
-for (num4 = '0' ; num4 <= '9' ; num4++)
+for (num4 = '1' ; num4 <= '9' ; num4++)
 {
 /** Formating Agruements */
 putchar(num1);
@@ -44,6 +44,5 @@ putchar(space1);
 }
 }
 }
-putchar('\n');
 return (0);
 }
