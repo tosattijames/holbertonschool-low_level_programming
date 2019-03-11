@@ -13,7 +13,7 @@ int num1, num2, num3, num4;
 for (num1 = '0' ; num1 <= '2' ; num1++)
 {
 /** Digit Two Loop */
-for (num2 = '0' ; num2 <= '4' ; num2++)
+for (num2 = '0' ; num2 <= '3' ; num2++)
 {
 /** Digit Three Loop */
 for (num3 = '0' ; num3 <= '5' ; num3++)
