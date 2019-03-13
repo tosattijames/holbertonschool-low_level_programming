@@ -18,7 +18,7 @@ for (num2 = '0' ; num2 <= '3' ; num2++)
 /** Digit Three Loop */
 for (num3 = '0' ; num3 <= '5' ; num3++)
 {
-/** Digit Three Loop */
+/** Digit Four Loop */
 for (num4 = '0' ; num4 <= '9' ; num4++)
 {
 /** Printing Agruements */
