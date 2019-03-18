@@ -10,7 +10,14 @@
  * Return: Void
 */
 
-
-
-
+void print_name(char *name, void (*f)(char *))
+{
+if (name == NULL)
+return;
+/** no input */
+if (f == NULL)
+return;
+/** no input */
+f(name);
+/** pass name varible to function */
 }
