@@ -3,7 +3,7 @@
 
 typedef struct op
 {
-char op;
+char s;
 void (*f)();
 } op_t;
 
