@@ -1,5 +1,9 @@
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
+
+
+
 
 /**
  * print_char - prints a char
@@ -57,42 +61,45 @@ printf("%s", ptr_string);
  * Return: (void)
  */
 
+
 void print_all(const char * const format, ...)
 {
 
-{op_t funclist[] = {
-{"c", print_char},
-{"i", print_int},
-{"f", print_float},
-{"s", print_string},
+op_t fun[] = {
+{'c', print_char},
+{'i', print_int},
+{'f', print_float},
+{'s', print_string},
 {'\0', NULL}
 };
 
-va_list ap;
+va_list args;
 
 int counter1;
 int counter2;
-char *separator = "";
+char *space = "";
+char *sep = ",";
 
-va_start(ap, format);
+va_start(args, format);
 
 counter1 = 0;
 while (format[counter1] != '\0')
 {
 counter2 = 0;
-while (funclist[counter2].op != NULL)
+while (fun[counter2].op != '\n')
 {
-if (format[counter1] == funclist[counter2].op[0]
+if (format[counter1] == fun[counter2].op)
 {
-printf("%s", separator);
-funclist[counter2].p(ap);
-separator = ", ";
+printf("%s", space);
+fun[counter2].f(args);
+space = sep;
 }
 counter2++;
 }
 counter1++;
 }
-va_end(ap);
+va_end(args);
 printf("\n");
 }
-}
+
+
