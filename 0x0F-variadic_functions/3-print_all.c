@@ -64,42 +64,44 @@ printf("%s", ptr_string);
 
 void print_all(const char * const format, ...)
 {
+        
+        op_t fun[] = {
+                {'c', print_char},
+                {'i', print_int},
+                {'f', print_float},
+                {'s', print_string},
+                {'\0', NULL}
+        };
+        
+        
+        va_list args;
+        
+        int counter1;
+        int counter2;
+        char *space = "";
+        char *sep = ", ";
 
-op_t fun[] = {
-{'c', print_char},
-{'i', print_int},
-{'f', print_float},
-{'s', print_string},
-{'\0', NULL}
-};
+        va_start(args, format);
+        
+        counter1 = 0;
+        while (format != NULL && format[counter1] != '\0')
+        {
+                counter2 = 0;
+                while (fun[counter2].s != '\0')
+                {
+                        if (format[counter1] == fun[counter2].s)
+                            {
+                                    printf("%s", space);
+                                    fun[counter2].f(args);
+                                    space = sep;
+                            }
+                            counter2++;
+                            
+                }
+                counter1++;
+        }
+        va_end(args);
+        printf("\n");
+                            
 
-va_list args;
-
-int counter1;
-int counter2;
-char *space = "";
-char *sep = ",";
-
-va_start(args, format);
-
-counter1 = 0;
-while (format[counter1] != '\0')
-{
-counter2 = 0;
-while (fun[counter2].op != '\n')
-{
-if (format[counter1] == fun[counter2].op)
-{
-printf("%s", space);
-fun[counter2].f(args);
-space = sep;
 }
-counter2++;
-}
-counter1++;
-}
-va_end(args);
-printf("\n");
-}
-
-
