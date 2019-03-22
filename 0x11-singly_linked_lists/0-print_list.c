@@ -1,10 +1,11 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include "lists.h"
 
 /**
  * print_list - prints all the elements in list_t
  * @h: pointer to head of the linked list
- * Return: Always 0.
+ * Return: the number nodes
  */
 
 size_t print_list(const list_t *h)
