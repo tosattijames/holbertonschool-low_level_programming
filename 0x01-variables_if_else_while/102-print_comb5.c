@@ -6,43 +6,26 @@
  */
 int main(void)
 {
-int num1;
-int num2;
-int num3;
-int num4;
-int comma1 = 44;
-int space1 = 32;
+	int first, second;
 
-/** Digit One Loop */
-for (num1 = '0' ; num1 <= '9' ; num1++)
-{
-/** Digit Two Loop */
-for (num2 = '0' ; num2 <= '9' ; num2++)
-{
-/** Digit Three Loop */
-for (num3 = '0' ; num3 <= '9' ; num3++)
-{
-/** Digit Four Loop */
-for (num4 = '1' ; num4 <= '9' ; num4++)
-{
-/** Formating Agruements */
-putchar(num1);
-putchar(num2);
-putchar(space1);
-putchar(num3);
-putchar(num4);
-if ((num1 == '9' && num2 == '8') && (num3 == '9' && num4 == '9'))
-{
-putchar('\n');
-}
-else
-{
-putchar(comma1);
-putchar(space1);
-}
-}
-}
-}
-}
-return (0);
+	for (first = 0; first < 99; first++)
+	{
+		for (second = first + 1; second < 100; second++)
+		{
+			putchar(first / 10 + '0');
+			putchar(first % 10 + '0');
+			putchar(' ');
+			putchar(second / 10 + '0');
+			putchar(second % 10 + '0');
+
+			if (first < 98 || second < 99)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+
+	putchar('\n');
+	return (0);
 }
