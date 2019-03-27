@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 /**
  * sum_listint - add sum of nodes in the list
