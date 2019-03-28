@@ -9,3 +9,5 @@
 6. Endianness Write a function that checks the endianness.
 7. Crackme3 Find the password for this program.
 8. Two's complement and negative numbers Write a blog post on how integers are stored in memory using two’s complement.
+
+
